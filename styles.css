@@ -47,6 +47,7 @@ nav a:hover {
 
 section {
     display: none;
+    margin-bottom: 2rem; /* Adds space after each section */
 }
 
 h2 {
@@ -54,6 +55,18 @@ h2 {
     color: #333;
     border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
+}
+
+h3 {
+    margin: 0; /* Removes the default margin */
+    padding: 0; /* Removes any default padding */
+    margin-bottom: 0.2rem; /* Closer spacing between job title and company */
+	text-decoration: underline; /* Underline the job title */
+}
+
+p.company {
+    margin-top: 0;
+    margin-bottom: 1rem; /* Adjusts space after the company */
 }
 
 p {
