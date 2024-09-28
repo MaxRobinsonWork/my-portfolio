@@ -9,6 +9,8 @@ function showSection(sectionId) {
     const selectedSection = document.getElementById(sectionId);
     if (selectedSection) {
         selectedSection.style.display = 'block';
+        // Change the URL without reloading the page
+        history.pushState(null, null, `#${sectionId}`);
     }
 }
 
@@ -19,5 +21,6 @@ showSection('about');
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault(); // Prevent the default anchor behavior
+        showSection(this.getAttribute('href').substring(1)); // Get the section ID from the link
     });
 });
