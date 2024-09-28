@@ -1,9 +1,14 @@
+html {
+    overflow-y: scroll; /* Forces the scrollbar to be always visible */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #282c34;
     color: #333;
+    overflow-y: auto; /* Enables scrolling only when needed */
 }
 
 .content-container {
@@ -61,7 +66,7 @@ h3 {
     margin: 0; /* Removes the default margin */
     padding: 0; /* Removes any default padding */
     margin-bottom: 0.2rem; /* Closer spacing between job title and company */
-	text-decoration: underline; /* Underline the job title */
+    text-decoration: underline; /* Underline the job title */
 }
 
 p.company {
