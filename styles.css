@@ -2,8 +2,16 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #282c34;
     color: #333;
+}
+
+.content-container {
+    width: 60%;
+    margin: 3rem auto;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -29,7 +37,7 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #333;
+    color: white;
     font-size: 1.2rem;
 }
 
@@ -37,22 +45,14 @@ nav a:hover {
     color: #0066cc;
 }
 
-.container {
-    width: 60%; /* Updated to center the content */
-    margin: 3rem auto;
-    background-color: white; /* White background for sections */
-    padding: 20px; /* Add padding for inner spacing */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-}
-
 section {
-    display: none; /* Hide all sections by default */
+    display: none;
 }
 
 h2 {
     font-size: 2rem;
-    color: white; /* White text for section titles */
-    border-bottom: 2px solid white; /* Border color to match the title */
+    color: #333;
+    border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
 }
 
