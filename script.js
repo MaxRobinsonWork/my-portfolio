@@ -14,6 +14,15 @@ function showSection(sectionId) {
     }
 }
 
+function copyEmail() {
+    const email = "Max.Robinson.work@gmail.com"; // Replace with your email
+    navigator.clipboard.writeText(email).then(function() {
+        alert("Email copied to clipboard!");
+    }, function(err) {
+        alert("Failed to copy email.");
+    });
+}
+
 // Show the about section by default
 showSection('about');
 
